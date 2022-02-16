@@ -168,6 +168,12 @@ h1 {
     list-style: none;
 }
 
+.categorie:hover {
+    transform: scale(0.8);
+    transition: all 0.5s;
+    box-shadow: 3px 3px 6px #adacab;
+}
+
 
 .item-prom {
     grid-column: 1/2;
