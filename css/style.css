@@ -70,13 +70,15 @@ h2 {
 /*Fin Header*/
 
 /*Barra de menu*/
-.menu-bar {
-    position: sticky;
-    top: 0;
-    margin-top: 10px;
+.navbar {
     background-color: #fa5363;
-    
 }
+   
+.menubar {
+    display: flex;
+    justify-content: space-around;
+}  
+
 .menu-container {
     display: flex;
     justify-content: space-around;
