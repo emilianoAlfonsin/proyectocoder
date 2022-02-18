@@ -74,30 +74,7 @@ h2 {
     background-color: #fa5363;
 }
    
-.menubar {
-    display: flex;
-    justify-content: space-around;
-}  
 
-.menu-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu {
-    list-style: none;
-    margin: 10px;
-}
-
-.menu a {
-    color: #ffff
-}
-
-.menu:hover{
-    transform: scale(1.3);
-    transition: all 1s;
-    text-shadow: 2px 2px 4px #adacab;
-}
 
 /*Fin barra de menu*/
 
