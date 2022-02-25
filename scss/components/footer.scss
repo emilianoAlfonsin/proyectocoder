@@ -1,0 +1,23 @@
+.main-footer {
+    background-color: #fa5363;
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    span {
+        padding: 1rem;
+    }
+
+    .social {
+        top: 15px;
+        margin: 20px;
+        height: 35px;
+        width: 35px;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+}
+

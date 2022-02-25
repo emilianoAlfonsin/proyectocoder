@@ -1,0 +1,35 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 12rem;
+  background-color: white;
+  
+  .logo-header {
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 10px;
+
+    a {
+        text-decoration: none;
+        .logo {
+            height: 10rem;
+        }
+    }
+  }
+
+  .access {
+      grid-column: 3/4;
+      align-self: center;
+      justify-self: end;
+      flex-flow: column;
+
+      .cart {
+          margin: 15px;
+      }
+      
+      .login {
+          margin: 15px;
+      }
+  }
+
+}

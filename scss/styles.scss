@@ -1,3 +1,7 @@
+@import '../scss/components/header';
+@import '../scss/components/footer.scss';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -35,65 +39,9 @@ h2 {
     
 }
 
-/*Header*/
-.main-header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 160px;
-    background-color: white; 
-}
-
-.logo-header {
-    grid-column: 2/3;
-    justify-self: center;
-    margin-top: 10px;
-}
-
-.logo {
-    height: 150px;
-}
-
-.access {
-    grid-column: 3/4;
-    align-self: center;
-    justify-self: end;
-    flex-flow: column;
-}
-
-.cart {
-    margin: 15px;
-}
-
-.login {
-    margin: 15px;
-}
-/*Fin Header*/
-
-/*Barra de menu*/
 .navbar {
     background-color: #fa5363;
 }
-   
-
-
-/*Fin barra de menu*/
-
-/*Footer*/
-.main-footer {
-    background-color: #fa5363;
-    margin-top: 10px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.social {
-    top: 15px;
-    margin: 20px;
-    height: 35px;
-    width: 35px;
-}
-/*Fin footer*/
 
 /* Index */
 .banner {
@@ -295,7 +243,7 @@ h1 {
 
 /*mobile*/
 
-/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .menu-container {
         display: grid;
@@ -392,10 +340,4 @@ h1 {
         justify-self: center;
     }
 
-}*/
-
-
-
-
-
-
+}
