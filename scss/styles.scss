@@ -1,6 +1,7 @@
 @import '../scss/components/header';
 @import '../scss/components/footer.scss';
-
+@import '../scss/components/productos';
+@import '../scss/base/mixins';
 
 *{
     margin: 0;
@@ -136,62 +137,6 @@ h1 {
 }
 /* Fin index*/
 
-/* Productos */
-
-.catalog {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 30px auto;
-}
-
-.product-item {
-    height: 410px; 
-    overflow: hidden;
-}
-
-.product-img {
-    width: auto;
-    height: 400px;
-    margin: 5px;
-}
-
-.product-item div{
-    align-items: center;
-    margin: 4px;
-}
-
-.product-item h2 {
-    text-align: center;
-}
-
-.description {
-    margin: 30px;
-    text-align: center;
-}
-
-.price {
-    text-align: center;
-    margin: 10px;
-}
-
-.product-item div a {
-    color: black;
-    background-color: rgb(202, 194, 194);
-    border-radius: 5%;
-    padding: 5px;
-}
-
-.product-item:hover {
-    box-shadow: 3px 3px 6px rgb(177, 176, 176);
-    transform: scale(1.05);
-    transition: all 0.5s;
-    background-color: white;
-    height: auto;
-}
-
-/*Fin productos*/
 
 /*Pagos*/
 .pagos {

@@ -1,8 +1,10 @@
+@import '../base/listas';
+
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 12rem;
-  background-color: white;
+  background-color: nth($color, 7);
   
   .logo-header {
     grid-column: 2/3;
@@ -24,11 +26,11 @@ header {
       flex-flow: column;
 
       .cart {
-          margin: 15px;
+        margin: 15px;
       }
       
       .login {
-          margin: 15px;
+        margin: 15px;
       }
   }
 

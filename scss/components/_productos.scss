@@ -1,0 +1,56 @@
+@import '../base/listas';
+@import '../base/mixins';
+@import '../base/extends';
+
+.catalog {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 30px auto;
+
+    .product-item {
+        height: 410px; 
+        overflow: hidden;
+        &:hover {
+            box-shadow: 3px 3px 6px nth($color, 6);
+            /*@include aumentar (scale(1.05), all 0.5s)*/
+            transform: scale(1.05);
+            transition: all 0.5s;
+            background-color: nth($color, 7);
+            height: auto;
+        }
+
+        .product-img {
+            width: auto;
+            height: 400px;
+            margin: 5px;
+        }
+
+        div {
+            align-items: center;
+            margin: 4px;
+
+            h2{
+                @extend %txt-center;
+            }
+
+            .description {
+                @extend %txt-center;
+            }
+
+            .price {
+                @extend %txt-center;
+            }
+
+            a {
+                color: nth($color, 8);
+                background-color: nth($color, 6);
+                border-radius: 5%;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,8 @@
+@mixin aumentar ($prop1, $prop2) {
+    -webkit-transform: $prop1;
+    -o-transform: $prop1;
+    -moz-transform: $prop1;
+    transform: $prop1;
+    transition: $prop2;
+}
+

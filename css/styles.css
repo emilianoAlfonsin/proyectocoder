@@ -2,7 +2,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 12rem;
-  background-color: white;
+  background-color: #ffff;
 }
 header .logo-header {
   grid-column: 2/3;
@@ -45,8 +45,51 @@ header .access .login {
   width: 35px;
 }
 .main-footer .social:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
+  /*no puedo entender por que no me lo aplica*/
+  /*@include aumentar (scale(1.3), 0,5s)*/
+  transform: scale(1.3);
+  transition: 0, 5s;
+}
+
+.catalog .product-item div .price, .catalog .product-item div .description, .catalog .product-item div h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.catalog {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 30px auto;
+}
+.catalog .product-item {
+  height: 410px;
+  overflow: hidden;
+}
+.catalog .product-item:hover {
+  box-shadow: 3px 3px 6px rgba(196, 195, 195, 0.932);
+  /*@include aumentar (scale(1.05), all 0.5s)*/
+  transform: scale(1.05);
+  transition: all 0.5s;
+  background-color: #ffff;
+  height: auto;
+}
+.catalog .product-item .product-img {
+  width: auto;
+  height: 400px;
+  margin: 5px;
+}
+.catalog .product-item div {
+  align-items: center;
+  margin: 4px;
+}
+.catalog .product-item div a {
+  color: #1b1b1b;
+  background-color: rgba(196, 195, 195, 0.932);
+  border-radius: 5%;
+  padding: 5px;
+  text-align: center;
 }
 
 * {
@@ -180,61 +223,6 @@ h1 {
 }
 
 /* Fin index*/
-/* Productos */
-.catalog {
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  margin: 30px auto;
-}
-
-.product-item {
-  height: 410px;
-  overflow: hidden;
-}
-
-.product-img {
-  width: auto;
-  height: 400px;
-  margin: 5px;
-}
-
-.product-item div {
-  align-items: center;
-  margin: 4px;
-}
-
-.product-item h2 {
-  text-align: center;
-}
-
-.description {
-  margin: 30px;
-  text-align: center;
-}
-
-.price {
-  text-align: center;
-  margin: 10px;
-}
-
-.product-item div a {
-  color: black;
-  background-color: #cac2c2;
-  border-radius: 5%;
-  padding: 5px;
-}
-
-.product-item:hover {
-  box-shadow: 3px 3px 6px #b1b0b0;
-  transform: scale(1.05);
-  transition: all 0.5s;
-  background-color: white;
-  height: auto;
-}
-
-/*Fin productos*/
 /*Pagos*/
 .pagos {
   margin: 35px;
